@@ -1,8 +1,8 @@
-server
+server:
   port: 8003
 
 spring:
-  application
+  application:
     name: cart-service
   jpa:
     show-sql: true
