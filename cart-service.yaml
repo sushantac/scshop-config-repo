@@ -1,0 +1,29 @@
+server
+  port: 8003
+
+spring:
+  application
+    name: cart-service
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secretkey: TheServerSecretKey
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8012/eureka/
+    healthcheck:
+      enabled: true
