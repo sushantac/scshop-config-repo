@@ -27,3 +27,8 @@ eureka:
       defaultZone: http://localhost:8012/eureka/
     healthcheck:
       enabled: true
+      
+app:
+  order:
+    shipping:
+      standard-charges: 20
