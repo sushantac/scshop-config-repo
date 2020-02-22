@@ -13,7 +13,7 @@ spring:
     name: api-gateway-service
   cloud:
     config:
-        uri: $(CONFIG_SERVER:http://localhost:8011}
+        uri: ${CONFIG_SERVER:http://localhost:8011}
     loadbalancer:
       ribbon:
         enabled: false
@@ -64,7 +64,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: $(EUREKA_SERVER:http://localhost:8012/eureka/}
+      defaultZone: ${EUREKA_SERVER:http://localhost:8012/eureka/}
     healthcheck:
       enabled: true
       
