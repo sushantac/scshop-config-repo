@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: eureka-discovery-service
+
+eureka:
+  client:
+    register-with-eureka: false
+    eureka.client.fetch-registry: false
