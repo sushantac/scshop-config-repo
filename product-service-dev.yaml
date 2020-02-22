@@ -14,7 +14,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh
 
 eureka:
   client:
@@ -25,3 +25,6 @@ eureka:
     healthcheck:
       enabled: true
 
+endpoints:
+  prometheus:
+    enabled: true
