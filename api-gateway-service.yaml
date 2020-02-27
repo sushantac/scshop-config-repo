@@ -43,7 +43,7 @@ spring:
         - id: product-service-swagger
           uri: lb://product-service
           predicates:
-          - Path=/externalGateway/api/*/products/**swagger-ui**,/externalGateway/api/*/products/**/**swagger-ui**
+          - Path=/externalGateway/api/*/products/**swagger-ui**,/externalGateway/api/*/products/**/**swagger-ui**/**
           filters:
           - StripPrefix=4
           - name: Retry
