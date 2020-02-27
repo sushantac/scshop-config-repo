@@ -34,18 +34,9 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-          - Path=/externalGateway/api/*/products
+          - Path=/externalGateway/api/*/products/**
           filters:
           - StripPrefix=1
-          - name: Retry
-            args: 
-              rerties: 3
-        - id: product-service-swagger
-          uri: lb://product-service
-          predicates:
-          - Path=/externalGateway/api/*/products/**swagger-ui**,/externalGateway/api/*/products/**/**swagger-ui**/**,/externalGateway/api/v1/products/swagger-ui.html/swagger-resources/configuration/security,externalGateway/api/*/products/swagger-resources**
-          filters:
-          - StripPrefix=4
           - name: Retry
             args: 
               rerties: 3
@@ -80,4 +71,3 @@ logging:
   level:
     org.springframework.cloud.gateway: TRACE
     org.springframework.web: DEBUG
-
