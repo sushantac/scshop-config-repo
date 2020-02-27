@@ -40,6 +40,15 @@ spring:
           - name: Retry
             args: 
               rerties: 3
+        - id: product-service-swagger
+          uri: lb://product-service
+          predicates:
+          - Path=/externalGateway/api/*/products/swagger-ui.html
+          filters:
+          - StripPrefix=4
+          - name: Retry
+            args: 
+              rerties: 3
         - id: cart-service
           uri: lb://cart-service
           predicates:
