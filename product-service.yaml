@@ -14,7 +14,7 @@ spring:
       uri: ${CONFIG_SERVER:http://35.244.88.249:8011}
   kafka:
     consumer:
-      bootstrap-servers: ${KAFKA_SERVER:35.244.121.244:9072}
+      bootstrap-servers: ${KAFKA_SERVER:35.244.88.249:9072}
       group-id: group_id
       auto-offset-reset: latest
       enable-auto-commit: false
@@ -26,7 +26,7 @@ spring:
             trusted:
               packages: com.scshop.products.productservice.entity
     producer:
-      bootstrap-servers: ${KAFKA_SERVER:35.244.121.244:9072}
+      bootstrap-servers: ${KAFKA_SERVER:35.244.88.249:9072}
       key-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
@@ -53,4 +53,4 @@ app:
   order:
     kafka:
       topic: 
-        order: order_topic
+        order-topic: order_topic
