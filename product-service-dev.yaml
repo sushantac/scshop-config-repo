@@ -24,7 +24,7 @@ spring:
         spring:
           json:
             trusted:
-              packages: com.scshop.products.productservice.entity
+              packages: java.util, com.scshop.products.productservice.entity
     producer:
       bootstrap-servers: ${KAFKA_SERVER:35.244.88.249:9072}
       key-serializer: org.springframework.kafka.support.serializer.JsonSerializer
