@@ -53,4 +53,4 @@ app:
   order:
     kafka:
       topic: 
-        order-topic: order_topic1
+        order-topic: order_topic2
