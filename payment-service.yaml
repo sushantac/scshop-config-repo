@@ -15,10 +15,9 @@ spring:
   kafka:
     consumer:
       bootstrap-servers: ${KAFKA_SERVER:localhost:9072}
-      group-id: payment_group2
-      client-id: payment_group2
+      group-id: payment_group
       auto-offset-reset: earliest
-      enable-auto-commit: true
+      enable-auto-commit: false
       key-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
