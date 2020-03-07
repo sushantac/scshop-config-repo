@@ -14,7 +14,7 @@ spring:
       uri: ${CONFIG_SERVER:http://localhost:8011}
   kafka:
     consumer:
-      bootstrap-servers: ${KAFKA_SERVER:localhost:9072}
+      bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
       group-id: order_group
       auto-offset-reset: earliest
       enable-auto-commit: false
