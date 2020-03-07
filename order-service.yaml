@@ -52,4 +52,4 @@ app:
       standard-charges: 20
     kafka:
       topic: 
-        order-topic: order_topic
+        order-topic: order_topic1
