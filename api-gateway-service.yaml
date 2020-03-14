@@ -22,6 +22,15 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+          - Path=/externalGateway/api/*/auth/**
+          filters:
+          - StripPrefix=1
+          - name: Retry
+            args: 
+              rerties: 3
         - id: user-service
           uri: lb://user-service
           predicates:
