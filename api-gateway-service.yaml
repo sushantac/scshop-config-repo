@@ -17,6 +17,16 @@ spring:
       ribbon:
         enabled: false
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://35.189.38.162","http://sushantc.com"
+            allowedHeaders:
+              - content-type
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
       discovery:
         locator:
           enabled: true
