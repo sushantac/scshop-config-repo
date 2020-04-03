@@ -22,7 +22,8 @@ spring:
           '[/**]':
             allowedOrigins: "*"
             allowedHeaders:
-              - content-type            
+              - content-type
+              - authorization
             allowedMethods:
               - GET
               - POST
