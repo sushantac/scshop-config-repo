@@ -20,7 +20,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "*"
+            allowedOrigins: "http://sushantc.com/"
             allowedHeaders:
               - content-type
             allowedMethods:
