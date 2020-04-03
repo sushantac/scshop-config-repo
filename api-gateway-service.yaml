@@ -27,13 +27,14 @@ spring:
               - GET
               - POST
               - PUT
+              - OPTIONS
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
       routes:
         - id: dedupe_response_header_route
-          uri: "*"
+          uri: http://sushantc.com
           filters:
             - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
         - id: auth-service
