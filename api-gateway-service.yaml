@@ -21,6 +21,8 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
+            allowedHeaders:
+              - content-type            
             allowedMethods:
               - GET
               - POST
@@ -31,10 +33,6 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: dedupe_response_header_route
-          uri: http://sushantc.com
-          filters:
-            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
         - id: auth-service
           uri: lb://auth-service
           predicates:
