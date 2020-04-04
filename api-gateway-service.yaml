@@ -10,7 +10,6 @@ management:
 spring:
   application:
     name: api-gateway-service
-  spring:
   security:
     oauth2:
       client:
