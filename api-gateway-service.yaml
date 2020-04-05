@@ -27,8 +27,6 @@ spring:
       ribbon:
         enabled: false
     gateway:
-      default-filters:
-        - TokenRelay
       globalcors:
         corsConfigurations:
           '[/**]':
