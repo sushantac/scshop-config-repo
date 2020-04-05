@@ -34,14 +34,13 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
-            allowedHeaders:
-              - content-type
-              - authorization
+            allowedHeaders: "*"
             allowedMethods:
               - GET
               - POST
               - PUT
               - OPTIONS
+              - HEAD
       discovery:
         locator:
           enabled: true
