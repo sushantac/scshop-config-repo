@@ -101,4 +101,4 @@ eureka:
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
-    org.springframework.web: DEBUG
+    org.springframework: DEBUG
