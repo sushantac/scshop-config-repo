@@ -29,7 +29,12 @@ spring:
       bootstrap-servers: ${KAFKA_SERVER:35.244.121.244:9072}
       key-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:7999/auth/realms/sc-shop
+        
 management:
   endpoints:
     web:
@@ -54,3 +59,6 @@ app:
     kafka:
       topic: 
         order-topic: order_topic
+        
+        
+
