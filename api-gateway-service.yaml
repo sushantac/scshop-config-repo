@@ -104,3 +104,10 @@ logging:
   level:
     org.springframework.cloud.gateway: TRACE
     org.springframework: DEBUG
+    
+application:
+  security:
+    authorizationServer:
+      host: ${AUTH_SERVER_HOST:localhost}
+      port: ${AUTH_SERVER_PORT:7999}
+
