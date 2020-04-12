@@ -33,7 +33,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:7999/auth/realms/sc-shop
+          issuer-uri: ${ISSUER_URI:http://localhost:7999/auth/realms/sc-shop}
 management:
   endpoints:
     web:
