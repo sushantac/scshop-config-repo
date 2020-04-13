@@ -69,3 +69,7 @@ app:
     kafka:
       topic: 
         order-topic: order_topic2
+
+logging:
+  level:
+    org.springframework.security.oauth2: TRACE
