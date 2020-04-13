@@ -9,6 +9,17 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: ${ISSUER_URI:http://localhost:7999/auth/realms/sc-shop}
+        registration:
+          keycloak:
+            client-id: order-service
+            client-secret: ae2b3843-edfe-48c0-9f08-26a3ffa8a5b9
+            scope: product
   cloud:
     config:
       uri: ${CONFIG_SERVER:http://localhost:8011}
