@@ -20,7 +20,7 @@ spring:
           keycloak:
             client-id: spring-cloud-gateway-client
             client-secret: 58b06d2c-c33a-41ec-82f0-9e6222e4eed3
-            scope: openid,profile,email
+            scope: openid,profile,email,product
   cloud:
     config:
         uri: ${CONFIG_SERVER:http://localhost:8011}
