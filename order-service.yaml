@@ -13,11 +13,11 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: ${ISSUER_URI:http://key:7999/auth/realms/sc-shop}
+          issuer-uri: ${ISSUER_URI:http://localhost:7999/auth/realms/sc-shop}
       client:
         provider:
           keycloak:
-            issuer-uri: ${ISSUER_URI:http://key:7999/auth/realms/sc-shop}
+            issuer-uri: ${ISSUER_URI:http://localhost:7999/auth/realms/sc-shop}
         registration:
           order-service:
             provider: keycloak
