@@ -17,7 +17,7 @@ spring:
           keycloak:
             issuer-uri: ${ISSUER_URI:http://localhost:7999/auth/realms/sc-shop}
         registration:
-          keycloak:
+          api-gateway:
             client-id: spring-cloud-gateway-client
             client-secret: 58b06d2c-c33a-41ec-82f0-9e6222e4eed3
             scope: openid,profile,email,product
