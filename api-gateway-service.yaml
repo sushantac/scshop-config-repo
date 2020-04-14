@@ -20,7 +20,8 @@ spring:
           api-gateway:
             provider: keycloak
             client-id: spring-cloud-gateway-client
-            client-secret: 58b06d2c-c33a-41ec-82f0-9e6222e4eed3
+#            client-secret: 58b06d2c-c33a-41ec-82f0-9e6222e4eed3
+            client-secret: 03f85b9d-dfa8-407c-bd9d-a4da53bb1174 
             scope: openid,profile,email,product
   cloud:
     config:
