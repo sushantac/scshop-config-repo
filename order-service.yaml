@@ -22,7 +22,8 @@ spring:
           order-service:
             provider: keycloak
             client-id: order-service
-            client-secret: ae2b3843-edfe-48c0-9f08-26a3ffa8a5b9
+#            client-secret: ae2b3843-edfe-48c0-9f08-26a3ffa8a5b9
+            client-secret: 70ccbeea-a414-4612-84e2-9f33515f5986
             authorization-grant-type: client_credentials
   cloud:
     config:
